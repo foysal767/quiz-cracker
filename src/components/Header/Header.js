@@ -2,11 +2,10 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
 const Header = () => {
     return (
         <div>
-            {/* <Navbar bg="primary" variant="dark" expand="lg">
+            <Navbar bg="primary" variant="dark" expand="lg">
                 <Container className='container'>
                     <Link className='text-white no-underline' to="/">Navbar</Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,7 +17,7 @@ const Header = () => {
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar> */}
+            </Navbar>
         </div>
     );
 };
