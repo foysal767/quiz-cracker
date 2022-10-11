@@ -5,10 +5,9 @@ import Topic from '../Topic/Topic';
 
 const Home = () => {
     const topics = useLoaderData();
-    // console.log(topics.data)
     return (
         <Container>
-            <div>
+            <div style={{ backgroundImage: "" }}>
                 <h2>This is header part</h2>
             </div>
             <Row xs={1} md={3} className="g-12 text-center mx-auto bg-info px-4 py-5 rounded">
