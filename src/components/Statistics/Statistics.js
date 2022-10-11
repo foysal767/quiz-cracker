@@ -1,7 +1,6 @@
 import React from 'react';
-// import { Tooltip } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+import { Bar, BarChart, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
     const topics = useLoaderData();
@@ -9,7 +8,7 @@ const Statistics = () => {
     return (
         <div className='container'>
                 <h3 className='my-4'>Quiz Statistics</h3>
-                <BarChart className='mx-auto' width={800} height={500} data={data}>
+                <BarChart className='mx-auto' width={600} height={400} data={data}>
                     <Bar dataKey="total" barSize={50} fill="#8884d8" />
                     <XAxis dataKey="name"></XAxis>
                     <YAxis />
