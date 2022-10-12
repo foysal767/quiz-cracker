@@ -10,7 +10,7 @@ const Topic = ({topic}) => {
                 <Card.Img className='rounded bg-dark mb-4' variant="top" src={logo} />
                 <h4>Topic: {name}</h4>
                 <p>Total Quiz: {total}</p>
-                <Link className='w-50 mx-auto' to={`/home/${id}`}><Button className='bg-info b-0'>Practice</Button></Link>
+                <Link className='w-50 mx-auto' to={`/home/${id}`}><Button className='bg-info b-0'>Quiz</Button></Link>
               </Card>
             </Col>
     );
