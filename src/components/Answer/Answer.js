@@ -5,9 +5,9 @@ const Answer = ({ option, question }) => {
     console.log(question)
     const handleRadioBtn = () => {
         if(option === question.correctAnswer){
-            alert("Correct Answer")
+            alert("Great! You Select Correct Answer")
         } else {
-            alert("Wrong Answer")
+            alert("Opps! You Select Wrong Answer")
         }
     }
     return (
@@ -17,6 +17,7 @@ const Answer = ({ option, question }) => {
             type="radio"
             id={option}
         />
+
     );
 };
 

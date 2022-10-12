@@ -1,3 +1,4 @@
+import { Toast } from 'react-bootstrap';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blogs from './components/Blogs/Blogs';
@@ -10,31 +11,31 @@ import Statistics from './components/Statistics/Statistics';
 function App() {
   const router = createBrowserRouter([
     {
-      path:'/',
+      path: '/',
       element: <Main></Main>,
       children: [
         {
           path: '/',
-          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {
           path: 'home',
-          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {
-          path:'/blogs',
+          path: '/blogs',
           element: <Blogs></Blogs>
         },
         {
-          path:'/statistics',
+          path: '/statistics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>
         },
         {
           path: 'home/:topicId',
-          loader: async({params}) => {
+          loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
           },
           element: <Quiz></Quiz>
@@ -50,6 +51,7 @@ function App() {
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
     </div>
+
   );
 }
 
