@@ -1,8 +1,7 @@
 import React from 'react';
 import Answer from '../Answer/Answer';
 import { EyeIcon } from '@heroicons/react/24/solid'
-import { Form } from 'react-bootstrap';
-import './QuesAns.css'
+import { Container, Form, Row } from 'react-bootstrap';
 
 
 const QuesAns = ({ question }) => {
@@ -16,13 +15,17 @@ const QuesAns = ({ question }) => {
                 <EyeIcon onClick={() => handleEyeBtn()} className="text-white me-4" style={{ width: '20px' }} />
             </div>
             <Form className='m-2 form mx-auto'>
-                {
-                    (question.options).map((option, index) => <Answer
-                        key={index}
-                        option={option}
-                        question={question}
-                    ></Answer>)
-                }
+                <Container>
+                    <Row xs={1} md={2}>
+                        {
+                            (question.options).map((option, index) => <Answer
+                                key={index}
+                                option={option}
+                                question={question}
+                            ></Answer>)
+                        }
+                    </Row>
+                </Container>
             </Form>
         </div>
     );

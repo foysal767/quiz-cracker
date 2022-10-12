@@ -1,9 +1,10 @@
 @media only screen and (max-width: 600px) {
-    BarChart {
-        width: 250px;
-        height: 300px
-    };
     .recharts {
         width: 300px;
+    };
+    
+    .barchart {
+        width: 250px;
+        height: 300px
     }
 }
