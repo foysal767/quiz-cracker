@@ -12,7 +12,7 @@ const Answer = ({ option, question }) => {
     }
 
     return (
-        <Form.Check onClick={()=> handleRadioBtn()} className='w-30 text-left m-1 rounded' style={{border: "1px solid white"}}
+        <Form.Check onClick={()=> handleRadioBtn()} className='w-10 text-left rounded' style={{border: "1px solid white"}}
             label={option}
             name={question.id}
             type="radio"

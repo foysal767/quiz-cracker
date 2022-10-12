@@ -14,9 +14,9 @@ const QuesAns = ({ question }) => {
                 <h5 className='mx-auto'>{question.question}</h5>
                 <EyeIcon onClick={() => handleEyeBtn()} className="text-white me-4" style={{ width: '20px' }} />
             </div>
-            <Form className='m-2 form mx-auto'>
-                <Container>
-                    <Row xs={1} md={2}>
+            <Form className='form mx-auto'>
+                <Container className='mx-auto'>
+                    <Row xs={1} md={2} className=" text-center mx-auto rounded">
                         {
                             (question.options).map((option, index) => <Answer
                                 key={index}
