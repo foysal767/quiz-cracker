@@ -1,6 +1,10 @@
 import React from 'react';
 import Answer from '../Answer/Answer';
 import { EyeIcon } from '@heroicons/react/24/solid'
+import { Form } from 'react-bootstrap';
+import './QuesAns.css'
+
+
 const QuesAns = ({ question }) => {
     const handleEyeBtn = () => {
         alert(`Correct Answer is: ${question.correctAnswer}`)
@@ -11,15 +15,15 @@ const QuesAns = ({ question }) => {
                 <h5 className='mx-auto'>{question.question}</h5>
                 <EyeIcon onClick={() => handleEyeBtn()} className="text-white me-4" style={{ width: '20px' }} />
             </div>
-            <div className='m-2 d-grid'>
+            <Form className='m-2 form mx-auto'>
                 {
                     (question.options).map((option, index) => <Answer
                         key={index}
                         option={option}
                         question={question}
-                        ></Answer>)
+                    ></Answer>)
                 }
-            </div>
+            </Form>
         </div>
     );
 };

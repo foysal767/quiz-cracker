@@ -12,7 +12,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Link style={{ textDecorationLine: 'none' }} className='text-white ms-2' to="/">Home</Link>
+                        <Link style={{ textDecorationLine: 'none' }} className='text-white ms-2' to="/">Topic</Link>
                         <Link style={{ textDecorationLine: 'none' }} className='text-white ms-2' to="statistics">Statistics</Link>
                         <Link style={{ textDecorationLine: 'none' }} className='text-white ms-2' to="blogs">Blogs</Link>
                     </Nav>
