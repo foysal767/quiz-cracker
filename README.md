@@ -13,4 +13,4 @@ This is a Quiz web app. This site is a Single Page Web Aplication using React js
   3. Topic related quiz are shown after click Quiz button. Correct answer shown if clicked eye button. Wrong or Right answer shown if you clicked any answer button. Build folder created before deploy in Netlify.
   
   
-Thanks for read this description. I'm eagerly waiting for your feedback.
+Thank you for read this description. I'm eagerly waiting for your feedback.
